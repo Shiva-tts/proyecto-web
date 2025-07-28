@@ -4,46 +4,204 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Alex | Tatuador y Desarrollador</title>
-  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">SHIVA <span class="text-primary">AI</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre mí</a></li>
+          <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portafolio">Portafolio</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
   <header>
-    <div class="container">
-      <h1>Hola, soy <span>Alex</span></h1>
-      <p class="tagline">Tatuador, autodidacta y entusiasta de la inteligencia artificial</p>
+    <div class="container text-center">
+      <h1 data-aos="zoom-in">HOLA, SOY <span>ALEX</span></h1>
+      <p class="lead">Tatuador, autodidacta y entusiasta de la inteligencia artificial</p>
     </div>
   </header>
 
-  <body>
-  <main class="container">
-    <section class="perfil">
-      <img src="img/shiva.png" alt="Alex Tatuador" class="perfil-img" />
-      <div>
-        <h2>Sobre mí</h2>
-        <p>Soy tatuador profesional especializado en estilo anime, con experiencia en proyectos visuales y tecnología creativa. He integrado IA en mi flujo de trabajo para optimizar procesos, automatizar tareas y mejorar la calidad de mis contenidos digitales. Además, desarrollo herramientas inteligentes y automatizaciones con n8n, Docker, Whisper y más.</p>
+  <section id="sobre-mi" class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-5" data-aos="fade-right">
+          <img src="assets/img/shiva.png" alt="Alex Tatuador" class="img-fluid rounded shadow">
+        </div>
+        <div class="col-md-7" data-aos="fade-left">
+          <h2>Sobre mí</h2>
+          <p>Soy tatuador profesional especializado en estilo anime, con experiencia en proyectos visuales y tecnología creativa. He integrado IA en mi flujo de trabajo para optimizar procesos, automatizar tareas y mejorar la calidad de mis contenidos digitales.</p>
+        </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section>
-      <h2>Habilidades</h2>
-      <ul class="skills">
-        <li> - Tatuaje estilo anime y diseño vectorial</li>
-        <li> - Automatización con IA (n8n, Whisper, Gemini, GPT-4o)</li>
-        <li> - Programación básica (JavaScript, Python)</li>
-        <li> - Generación de imágenes IA (Stable Diffusion)</li>
-        <li> - Creación de contenido multimedia (video, voz, subtítulos)</li>
-      </ul>
-    </section>
+  <section id="habilidades" class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center mb-5" data-aos="fade-up">Habilidades</h2>
+      <div class="accordion" id="accordionHabilidades">
 
-    <section>
-      <h2>Contacto</h2>
-      <p>¿Te interesa colaborar o agendar una cita? Escríbeme a:</p>
-      <a class="contacto" href="mailto:alex@example.com">alex@example.com</a>
-    </section>
-  </main>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Diseño de tatuajes estilo anime
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+               data-bs-parent="#accordionHabilidades">
+            <div class="accordion-body">
+              Trabajo principalmente con referencias de anime, desarrollando composiciones originales o reinterpretaciones detalladas. Manejo líneas limpias, sombreados estilizados y composiciones con impacto visual, tanto en digital como en piel.
+            </div>
+          </div>
+        </div>
 
-  <footer>
-    <p>&copy; 2025 Alex | Portafolio</p>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Automatización con n8n y AI
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+               data-bs-parent="#accordionHabilidades">
+            <div class="accordion-body">
+              Desarrollo flujos personalizados en n8n para automatizar tareas repetitivas, análisis de datos, integración con APIs y generación de contenido usando modelos como GPT-4, Gemini o Whisper. Combino nodos inteligentes y lógica condicional avanzada.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Docker y servidores autohospedados
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+               data-bs-parent="#accordionHabilidades">
+            <div class="accordion-body">
+              Manejo stacks con Docker Compose para implementar servicios multimedia, control de red, IA local y automatización. Administro contenedores en CasaOS y configuro túneles con Cloudflare para acceso remoto seguro.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              Generación de imágenes y video con IA
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+               data-bs-parent="#accordionHabilidades">
+            <div class="accordion-body">
+              Utilizo herramientas como Stable Diffusion, AnimateDiff, ComfyUI, Kokoro TTS y FFmpeg para generar contenido visual y narrativo. Combino prompts personalizados, edición por lotes y automatización para crear contenido profesional desde cero.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5">
+    <div class="container text-center" data-aos="zoom-in">
+      <h2>¿Tienes tatuajes?</h2>
+  
+      <div class="d-flex justify-content-center gap-3 mt-3">
+        <button id="btnSi" class="btn btn-success px-4">Sí</button>
+        <button id="btnNo" class="btn btn-danger px-4">No</button>
+      </div>
+  
+      <div class="row justify-content-center mt-4">
+        <div class="col-md-3 bg-dark text-white py-3 rounded mx-2">
+          <h5 class="mb-1">Con tatuajes</h5>
+          <h3 id="contadorSi">0</h3>
+        </div>
+        <div class="col-md-3 bg-dark text-white py-3 rounded mx-2">
+          <h5 class="mb-1">Sin tatuajes</h5>
+          <h3 id="contadorNo">0</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+    
+  <section id="portafolio" class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center mb-4" data-aos="fade-up">Portafolio</h2>
+      <div class="row g-4">
+        <!-- Tatuajes -->
+        <div class="col-md-6 col-lg-3" data-aos="fade-up">
+          <div class="card h-100 shadow">
+            <img src="assets/img/tatuaje1.JPG" class="card-img-top portafolio-img" alt="Tatuaje anime">
+            <div class="card-body">
+              <h5 class="card-title">Tatuajes estilo anime</h5>
+              <p class="card-text">Diseños detallados inspirados en personajes de anime, realizados en piel con precisión y estilo propio.</p>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Automatización n8n -->
+        <div class="col-md-6 col-lg-3" data-aos="fade-up">
+          <div class="card h-100 shadow">
+            <img src="assets/img/n8n.jpg" class="card-img-top portafolio-img" alt="Automatización con n8n">
+            <div class="card-body">
+              <h5 class="card-title">Automatización con IA</h5>
+              <p class="card-text">Flujos inteligentes en n8n integrando APIs, lógica condicional y modelos como GPT y Whisper.</p>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Docker y servidores -->
+        <div class="col-md-6 col-lg-3" data-aos="fade-up">
+          <div class="card h-100 shadow">
+            <img src="assets/img/docker.jpg" class="card-img-top portafolio-img" alt="Docker y servidores">
+            <div class="card-body">
+              <h5 class="card-title">Infraestructura con Docker</h5>
+              <p class="card-text">Despliegue de stacks autohospedados con Docker, CasaOS, Cloudflare Tunnels y redes privadas.</p>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Generación visual IA -->
+        <div class="col-md-6 col-lg-3" data-aos="fade-up">
+          <div class="card h-100 shadow">
+            <img src="assets/img/gen.jpg" class="card-img-top portafolio-img" alt="Generación IA">
+            <div class="card-body">
+              <h5 class="card-title">Contenido visual con IA</h5>
+              <p class="card-text">Prompts, video, imagen y narración con IA usando Stable Diffusion, FFmpeg y ComfyUI.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<div id="imgModal" class="modal-img" onclick="closeModal()">
+  <span class="close">&times;</span>
+  <img class="modal-content-img" id="modalImage">
+</div>
+
+  <footer class="text-white text-center py-3">
+    <div class="container">
+      <small> 2025 Alex Hernández</small>
+    </div>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
